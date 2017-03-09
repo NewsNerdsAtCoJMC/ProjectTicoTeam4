@@ -21,5 +21,8 @@ class College(models.Model):
 
 class Blog(models.Model):
     author = models.CharField(max_length=255)
+    date = models.DateField
     title = models.CharField(max_length=255)
-    post = models.CharField(max_length=3200)
+    post = models.TextField
+    image = models.ImageField()
+    tags = models.CharField(max_length=1000)
