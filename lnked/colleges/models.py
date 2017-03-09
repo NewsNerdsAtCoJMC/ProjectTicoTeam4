@@ -23,3 +23,5 @@ class Blog(models.Model):
     author = models.CharField(max_length=255)
     title = models.CharField(max_length=255)
     post = models.CharField(max_length=3200)
+    def _str_(self):
+        return self.name 
