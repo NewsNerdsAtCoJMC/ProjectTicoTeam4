@@ -16,3 +16,8 @@ class College(models.Model):
     significant_majors = models.ManyToManyField(SignificantMajors)
     def __str__(self):
         return self.name
+
+class Blog(models.Model):
+    author = models.CharField(max_length=255)
+    title = models.CharField(max_length=255)
+    post = models.CharField(max_length=3200)
