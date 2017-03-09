@@ -13,6 +13,8 @@ class College(models.Model):
     instate_cost = models.IntegerField()
     outstate_cost = models.IntegerField()
     website = models.URLField()
+    majors = models.URLField()
+    financial_aid = models.URLField()
     significant_majors = models.ManyToManyField(SignificantMajors)
     def __str__(self):
         return self.name
