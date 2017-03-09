@@ -2,7 +2,7 @@ from django.apps import AppConfig
 
 
 class CollegeConfig(AppConfig):
-    name = 'College'
+    name = 'college'
 
 class SignificantMajorsConfig(AppConfig):
     name = 'SignificantMajors'
