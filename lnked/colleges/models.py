@@ -26,3 +26,5 @@ class Blog(models.Model):
     post = models.TextField
     image = models.ImageField()
     tags = models.CharField(max_length=1000)
+    def _str_(self):
+        return self.name
