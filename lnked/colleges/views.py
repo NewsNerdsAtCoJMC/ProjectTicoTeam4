@@ -9,4 +9,11 @@ from colleges.models import SignificantMajors, College, Blog
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the homepage.")
+    return render(request, 'index.html', {})
+
+def college_comparison(request):
+    return render (request, 'colleges/college_comparison.html', {})
+    search_bar = SearchBar(request, ['college'])
+
+def college_blog(request):
+    return render (request, 'colleges/college_blog.html', {})
