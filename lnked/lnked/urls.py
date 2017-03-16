@@ -1,10 +1,9 @@
 from django.conf.urls import url
 from django.contrib import admin
-from lnked import views
+
+from colleges import views
+
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'^admin/', admin.site.urls),
-]
-urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ]
