@@ -6,7 +6,7 @@
 	{% paginate posts %}
 
 	{% for post in posts %}
-		<article itemscope itemtype="http://schema.org/Article">
+		<article itemscope itemtype="http://lnked.com/Article">
 			<header itemprop="name">
 				<a href="{{ post.get_absolute_url }}">
 					<h1>{{ post.title }}</h1>
