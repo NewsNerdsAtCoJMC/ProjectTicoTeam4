@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Resources</title>
+
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Styles -->
+<link href="css/flexboxgrid.min.css" rel="stylesheet">
+<link href="css/lnked.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+
+</style>
+
+</head>
+
+<body>
+<div class="container-fluid">
+
+<!-- header -->
+
+<div class="row">
+	<div class="col-xs-1"></div>
+	<div class="col-xs-2 icon">
+		<p><a href="home.html"><img src="images/gradcap.png" alt="home" width="150" height="150"></a></p>
+	</div>
+	<div class="col-xs-6">
+		<h1>LNKed</h1>
+		<nav>
+			<ul>
+				<li><a href="schools.html">Schools</a></li>
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="ambassadors.html">Ambassadors</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="col-xs-3 login">
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="help">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	</div>
+	</div>	
+<!-- content -->
+
+<div class="row">
+	<div class="col-xs-12">
+		<h1 class="concerns">Got a few conerns? We've all been there.</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-3"></div>
+	<div class="col-xs-6 tool">
+		<p>We know you have questions, and we’ve got answers. Use our personalized tool to ease all of your worries and get you set up for success on day one.</p>
+		<p class="button"><a href="faq.html">LET'S GO</a></p>
+	</div>
+	<div class="col-xs-3"></div>
+</div>
+<br>
+<div class="row">
+	<div class="col-xs-6 campus">
+		<h2>Find your campus, explore your resources.</h2>
+		<p class="button"><a href="schools.html">LEARN MORE</a></p>
+	</div>
+	<div class="col-xs-6 covered">
+		<h3>We've got you covered ith the need-to-knows.</h3>
+		<p>You may not even know what it is you don’t know, but relax - we made a list for you!</p>
+		<p>Check out all of the things we think you should know about your school before you even step on campus.</p>
+		<p class="button"><a href="checklist.html">LET'S GO</a></p>
+	</div>
+</div>
+
+<!-- footer -->
+<br>
+<div class="row footer">
+	<div class="col-xs-4">
+		<p footer>Enter your email to be the first to know new information about colleges near you.</p>
+	</div>
+	<div class="col-xs-4">
+		<p class="button"><a href="#" class="fa fa-twitter"></a> follow LNKed</p>
+	</div>
+	<div class="col-xs-4">
+		<p class="button"><a href="#" class="fa fa-facebook"></a> Become a fan</p>
+	</div>
+</div>
+<div class="row footer">
+	<div class="col-xs-4">
+		<form action="/action_page.php">
+ 			<input list="browsers" name="browser">
+  			<input type="submit">
+		</form>
+		<br>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

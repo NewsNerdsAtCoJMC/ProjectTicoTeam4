@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Checklist</title>
+
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Styles -->
+<link href="css/flexboxgrid.min.css" rel="stylesheet">
+<link href="css/lnked.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+</style>
+
+</head>
+
+<body>
+<div class="container-fluid">
+
+<!-- header -->
+
+<div class="row">
+	<div class="col-xs-1"></div>
+	<div class="col-xs-2 icon">
+		<p><a href="home.html"><img src="images/gradcap.png" alt="home" width="150" height="150"></a></p>
+	</div>
+	<div class="col-xs-6">
+		<h1>LNKed</h1>
+		<nav>
+			<ul>
+				<li><a href="schools.html">Schools</a></li>
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="ambassadors.html">Ambassadors</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="col-xs-2 login">
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="help">Login</button>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	</div>
+	</div>
+	
+<!-- content -->
+<div class="row checklist">
+	<div class="col-xs-10">
+		<h1>Off-to-College Checklist</h1>
+		<p>Use this checklist to make sure you have everything you need for your first year at college. These are just suggestions; you should adapt this list to suit your own situation.</p>
+		<p>To save packing or shipping, it might make sense to buy some of these items after you arrive. It might also make sense to pack for one season at a time and switch items when you go home during breaks.</p>
+	</div>
+	<div class="col-xs-2">
+		<p>Printable Version <i class="fa fa-print"></i></p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-1"></div>
+		<div class="col-xs-5 list1">
+		<ul><b>Room Needs/Storage</b>
+				<li>Bedside lamp</li>
+				<li>Alarm clock/clock radio</li>
+				<li>Mini trash can</li>
+				<li>Storage bins</li>
+				<li>Under-the-bed storage trays</li>
+				<li>Desk lamp</li>
+				<li>Fan</li>
+				<li>Drying rack for laundry</li>
+				<li>Bulletin board and pushpins</li>
+				<li>Dry-erase wall calendar/board</li>
+				<li>Mini toolkit</li>
+				<li>Picture hangers</li>
+		</ul>
+		</div>
+		<div class="col-xs-5 list2">
+			<ul><b>Linens/Laundry Supplies</b>
+				<li>Sheets and pillowcases (2 sets)</li>
+					<li>Towels (3 each of bath, hand and face)</li>
+					<li>Pillows (2)</li>
+					<li>Mattress pad (check with college for size needed)</li>
+					<li>Blankets (2)</li>
+					<li>Comforter/bedspread</li>
+					<li>Clothes hangers</li>
+					<li>Laundry bag/basket</li>
+					<li>Laundry detergent, fabric softener and stain remover</li>
+					<li>Lint brush</li>
+					<li>Mini sewing kit</li>
+			</ul>
+		</div>
+	<div class="col-xs-1"></div>
+</div>
+
+<div class="row">
+	<div class="col-xs-1"></div>
+	<div class="col-xs-5 list2">
+		<ul>
+			<b>Office/Desk Supplies</b>
+			<li>Electronic storage media such as memory cards and USB flash drives</li>
+			<li>Stapler and staples</li>
+			<li>Printer paper (if you decide to bring a printer)</li>
+			<li>Pens and pencils</li>
+			<li>Pencil holder and sharpener</li>
+			<li>Notebooks</li>
+			<li>Folder with pockets</li>
+			<li>Labels of various sizes</li>
+			<li>3 × 5 index cards</li>
+			<li>Sticky notes</li>
+			<li>Paper clips and binder clips</li>
+			<li>Rubber bands</li>
+			<li>Tape</li>
+			<li>Scissors</li>
+			<li>Highlighter pens (multiple colors)</li>
+			<li>Ruler</li>
+			<li>Stackable desk trays (at least 4)</li>
+			<li>Stamps and envelopes</li>
+		</ul>
+	</div>
+	<div class="col-xs-5 list1">
+		<ul>
+			<b>Electronics</b>
+			<li>Laptop (printer is optional)</li>
+			<li>Portable speakers</li>
+			<li>Extension cords</li>
+			<li>3-2 prong adapters</li>
+			<li>MP3 player</li>
+			<li>Headphones</li>
+			<li>Camera</li>
+			<li>Cell phone</li>
+		</ul>
+	</div>
+	<div class="col-xs-1"></div>
+</div>
+
+<div class="row">
+	<div class="col-xs-1"></div>
+	<div class="col-xs-5 list1">
+		<ul>
+			<b>Shared Items - Check with roommate(s)</b>
+			<li>Audio equipment</li>
+			<li>TV and DVD player</li>
+			<li>Coffeemaker/hot pot/microwave, if allowed)</li>
+			<li>Small refrigerator (if one isn’t provided)</li>
+			<li>Area rug</li>
+			<li>Posters/art</li>
+		</ul>
+	</div>
+	<div class="col-xs-5 list2">
+		<ul>
+			<b>Toiletries</b>
+			<li>Antacid</li>
+			<li>Aspirin or other pain relievers</li>
+			<li>Vitamins</li>
+			<li>Antidiarrheal medicine</li>
+			<li>Adhesive bandages, antibiotic ointment</li>
+			<li>Cough drops</li>
+			<li>Shower caddy</li>
+			<li>Shower shoes</li>
+			<li>Shampoo and conditioner</li>
+			<li>Hairstyling products</li>
+			<li>Bath and face soap</li>
+			<li>Travel soap container(s)</li>
+			<li>Toothpaste and toothbrush</li>
+			<li>Dental floss</li>
+			<li>Comb/brush</li>
+			<li>Tweezers</li>
+			<li>Nail clippers</li>
+			<li>Hair dryer/straightener/curling iron</li>
+			<li>Razor and shaving cream</li>
+			<li>Lotion and/or facial moisturizer</li>
+			<li>Cotton swabs</li>
+		</ul>
+	</div>
+	<div class="col-xs-1"></div>
+</div>
+
+<div class="row">
+	<div class="col-xs-1"></div>
+	<div class="col-xs-5 list2">
+		<ul>
+			<b>Clothing</b>
+			<li>Underwear</li>
+			<li>Socks</li>
+			<li>Pants/jeans</li>
+			<li>Shirts/blouses</li>
+			<li>Sweats</li>
+			<li>Pajamas</li>
+			<li>Slippers and/or flip-flops</li>
+			<li>Sweaters</li>
+			<li>Light/heavy jackets</li>
+			<li>Gloves/scarf/hat</li>
+			<li>1 pair of boots</li>
+			<li>2 pairs of sneakers or comfortable/walking shoes</li>
+			<li>1 set of business-casual clothes</li>
+			<li>1 pair of dress shoes</li>
+			<li>1 swimsuit</li>
+		</ul>
+	</div>
+	<div class="col-xs-5 list1">
+		<ul>
+			<b>Household/Kitchen Items</b>
+			<li>Paper towels</li>
+			<li>Trash bags</li>
+			<li>Lightbulbs</li>
+			<li>All-purpose cleaner</li>
+			<li>Plastic storage bags</li>
+			<li>Food-storage containers</li>
+			<li>Dish soap</li>
+			<li>Wet wipes</li>
+			<li>Tissues</li>
+			<li>Bowl, plate and cup</li>
+			<li>Coffee mug</li>
+			<li>Water bottle</li>
+			<li>Silverware</li>
+			<li>Can/bottle opener</li>
+		</ul>
+	</div>
+	<div class="col-xs-1"></div>
+</div>
+
+<div class="row">
+	<div class="col-xs-1"></div>
+	<div class="col-xs-5 list1">
+		<ul><b>Miscellaneous</b>
+		<li>Umbrella</li>
+		<li>Backpack</li>
+		<li>Sports Equipment</li>
+		</ul>
+	</div>
+</div>
+<!-- footer -->
+<br>
+<div class="row footer">
+	<div class="col-xs-4">
+		<p footer>Enter your email to be the first to know new information about colleges near you.</p>
+	</div>
+	<div class="col-xs-4">
+		<p class="button"><a href="#" class="fa fa-twitter"></a> follow LNKed</p>
+	</div>
+	<div class="col-xs-4">
+		<p class="button"><a href="#" class="fa fa-facebook"></a> Become a fan</p>
+	</div>
+</div>
+<div class="row footer">
+	<div class="col-xs-4">
+		<form action="/action_page.php">
+ 			<input list="browsers" name="browser">
+  			<input type="submit">
+		</form>
+		<br>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

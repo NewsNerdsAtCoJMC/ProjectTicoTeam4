@@ -1,0 +1,392 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container-fluid {
+	max-width: 1200px;
+}
+
+* {
+	font-family: sans-serif;
+}
+
+ /*-- header --*/
+
+.icon img {
+	background-color: #A2E26C;
+	align-content: right;
+}
+
+.icon a:link {
+	text-decoration: none;
+	display: block;
+}
+
+.help {
+	background-color: #605C5C;
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
+
+.login p {
+	background-color: #605C5C;
+	color: white;
+	text-align: center;
+	padding: 15px;
+}
+
+nav {
+	clear: both;
+	width: 100%;
+	text-align: center;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li {
+	width: 25%;
+	display: inline;
+	float: left;
+}
+
+nav a {
+	font-size: 25px;
+}
+
+nav li a:link, nav li a:visited {
+	color: #95989A;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 15px;
+}
+
+nav li a:hover {
+	color: #A2E26C;
+}
+
+/*-- button --*/
+
+.fa {
+    text-decoration: none;
+}
+
+.fa-facebook {
+  	background: #A2E26C;
+  	color: white;
+}
+
+.fa-twitter {
+    background: #A2E26C;
+    color: white;
+}
+
+.button {
+	padding: 1em;
+	color: white;
+	border: solid thin #95989A;
+	cursor: pointer;
+	display: inline-block;
+	background-color: #A2E26C;
+	text-align: center;
+}
+
+.button a:link, a:visited {
+	color: white;
+	text-decoration: none;
+	display: inline block;
+}
+
+/*-- footer --*/
+
+.footer {
+	background-color: #605C5C;
+	color: white;
+}
+
+/*-- Home --*/
+
+.about {
+	background-color: #52B4F5;
+	color: white;
+}
+
+.testimonials {
+	background-color: white;
+	color: #52B4F5;
+}
+
+.testimonialsp {
+	color: #95989A;
+}
+
+
+/*-- schools --*/
+
+.unl img {
+	margin: auto;
+}
+
+.nwu img {
+	margin: auto;
+	padding-top: 50px;
+}
+
+.scc1 img {
+	margin: auto;
+}
+
+.uc img {
+	margin: auto;
+}
+
+.schools {
+	color: white;
+	text-align: center;
+	background-color: #7E7B7B;
+}
+
+
+/*-- resources --*/
+.concerns {
+	background-color: #52B4F5;
+	padding: 50px;
+	text-align: center;
+	color: white;
+}
+
+.tool {
+	background-color: #7E7B7B;
+	color: white;
+	text-align: center;
+}
+
+.campus {
+	color: #52B4F5;
+	text-align: center;
+}
+
+.covered {
+	background-color:#52B4F5;
+	color: white;
+	text-align: center;
+}
+
+/*-- ambassadors --*/
+
+.top {
+	background-color: #52B4F5;
+	color: white;
+}
+
+.bottom {
+	background-color: #52B4F5;
+	color: white;	
+}
+
+.ambassador {
+	background-color: #7E7B7B;
+	color: white;
+	text-align: center;
+	margin: 20px;
+}
+
+/*-- FAQ --*/
+
+.image { 
+	position: relative; 
+	width: 100%;
+}
+
+.faq1 {
+	color: #52B4F5;
+	text-align: center;
+}
+
+.faq h2 {
+	color: black;
+	text-align: left;
+}
+
+.faq p {
+	color: black;
+	text-align: left;
+}
+
+/*-- profile --*/
+
+.profile img {
+	border: medium solid #52B4F5;
+}
+
+/*-- learn more page for schools (all have the unl class) --*/
+
+.unl {
+	background-color: #605C5C;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+.type {
+	 color: #52B4F5;
+}
+
+.description {
+	color:  #605C5C;
+}
+
+/*-- checklist --*/
+
+.checklist {
+	color: #605C5C;
+}
+
+.list1 {
+	background-color: #52B4F5;
+	margin: 5px;
+	color: white;
+}
+.list1 ul {
+	list-style-type: circle;
+}
+
+.list2 {
+	background-color: white;
+	color: #52B4F5;
+}
+
+.list2 ul {
+	list-style-type: circle;
+}
+
+/*-- signup --*/
+
+.login2 {
+	text-align: center;
+	color: #605C5C;
+}
+
+.login3 a:link a:visited {
+	text-decoration: none;
+	color: #605C5C;
+}
+
+/*-- login *--/
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button p {
+    background-color: #A2E26C;
+    color: white;
+    padding: 14px 20px;
+   	border: solid thin #95989A;
+    cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}

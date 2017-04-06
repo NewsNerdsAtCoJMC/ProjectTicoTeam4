@@ -1,0 +1,201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Union College</title>
+
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Styles -->
+<link href="css/flexboxgrid.min.css" rel="stylesheet">
+<link href="css/lnked.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style type="text/css">
+</style>
+
+</head>
+
+<body>
+<div class="container-fluid">
+
+<!-- header -->
+
+<div class="row">
+	<div class="col-xs-1"></div>
+	<div class="col-xs-2 icon">
+		<p><a href="home.html"><img src="images/gradcap.png" alt="home" width="150" height="150"></a></p>
+	</div>
+	<div class="col-xs-6">
+		<h1>LNKed</h1>
+		<nav>
+			<ul>
+				<li><a href="schools.html">Schools</a></li>
+				<li><a href="resources.html">Resources</a></li>
+				<li><a href="ambassadors.html">Ambassadors</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="col-xs-2 login">
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="help">Login</button>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	</div>
+	</div>
+
+<!-- content -->
+
+<div class="row">
+	<div class="col-xs-3"></div>
+	<div class="col-xs-6">
+		<h1 class="unl">Union College</h1>
+	</div>
+	<div class="col-xs-3"></div>
+</div>
+
+<div class="row">
+	<div class="col-xs-3"></div>
+		<div class="col-xs-3 type">
+			<h2>Type</h2>
+		</div>
+		<div class="col-xs-3 description">
+			<p>Private, Seventh-day Advenist</p>
+		</div>
+	<div class="col-xs-3"></div>
+</div>
+
+<div class="row">
+	<div class="col-xs-3"></div>
+		<div class="col-xs-3 type">
+			<h2>Campus Life</h2>
+		</div>
+		<div class="col-xs-3 description">
+			<h2>901</h2>
+			<p>Undergraduates enrolled<br><i class="material-icons" style="color:#605C5C">group</i> Small<br><i class="fa fa-home" style="color:#605C5C"></i> Suburban</p>
+		</div>
+	<div class="col-xs-3"></div>
+</div>
+
+<div class="row">
+	<div class="col-xs-3"></div>
+	<div class="col-xs-3 type">
+		<h2>Academics</h2>
+	</div>
+	<div class="col-xs-3 description">
+		 <ul>
+		 	<b>Colleges & Departments</b>
+		 	<li>Business & Finance</li>
+		 	<li>Communications & Journalism</li>
+		 	<li>Education & Teaching</li>
+		 	<li>Entrepreneurship</li>
+		 	<li>Government & International Relations</li>
+		 	<li>Medicine & Health Care</li>
+		 	<li>Law</li>
+		 	<li>Non-Profit & Services</li>
+		 	<li>Create Your Own Major</li>
+		</ul>
+		</div>
+	<div class="col-xs-3"></div>
+</div>
+
+<div class="row">
+	<div class="col-xs-3"></div>
+		<div class="col-xs-3 type">
+			<h2>Admissions</h2>
+		</div>
+		<div class="col-xs-3 description">
+			<h2>Somewhat Selective</h2>
+			<p>52.1% of applicants admitted<br>
+			<ul>
+			<b>Requirements</b>
+			<li>SAT Reasoning Test or ACT: Required</li>
+			<br>
+			<b>New SAT Scores</b>
+				<li>Combined: 1290</li>
+			<br>
+			<b>Old SAT Scores</b>
+				<li>Combined: 870</li>
+			<br>
+			<b>ACT Composite Scores</b>
+				<li>Minimum: 18</li>
+				<li>Minimum English and Math: 17</li>
+			</ul>
+			</p>
+		</div>
+	<div class="col-xs-3"></div>
+</div>
+
+<div class="row">
+	<div class="col-xs-3"></div>
+		<div class="col-xs-3 type">
+			<h2>Cost & Aid</h2>
+		</div>
+		<div class="col-xs-3 description">
+			<p><h2>$21,970</h2>In-state tuition and fees</p>
+			<p><h2>$21,970</h2>Out-of-state tuition and fees</p>
+			<p><h2>$3,980</h2>Room & Board</p>
+		</div>
+	<div class="col-xs-3"></div>
+</div>
+
+
+<!-- footer -->
+<br>
+<div class="row footer">
+	<div class="col-xs-4">
+		<p footer>Enter your email to be the first to know new information about colleges near you.</p>
+	</div>
+	<div class="col-xs-4">
+		<p class="button"><a href="#" class="fa fa-twitter"></a> follow LNKed</p>
+	</div>
+	<div class="col-xs-4">
+		<p class="button"><a href="#" class="fa fa-facebook"></a> Become a fan</p>
+	</div>
+</div>
+<div class="row footer">
+	<div class="col-xs-4">
+		<form action="/action_page.php">
+ 			<input list="browsers" name="browser">
+  			<input type="submit">
+		</form>
+		<br>
+	</div>
+</div>
+
+</div>
+</body>
+</html>
