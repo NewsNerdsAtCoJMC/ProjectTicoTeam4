@@ -1,19 +1,39 @@
-<!DOCTYPE html>
-{% block content %}
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css" />
+{% load static %}
+<!doctype html>
+<html><head>
+<meta charset="UTF-8">
+<title>{% block title %}{% endblock %}</title>
+
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Styles -->
+<link href="/static/css/flexboxgrid.min.css" rel="stylesheet">
+<link href="/static/css/lnked.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+</style>
+
+</head>
+
+<body>
+<div class="container-fluid">
+
+<!-- header -->
 
 <div class="row">
 	<div class="col-xs-1"></div>
 	<div class="col-xs-2 icon">
-		<p><a href="home.html"><img src="images/gradcap.png" alt="home" width="150" height="150"></a></p>
+		<p><a href="home.html"><img src="/static/images/gradcap.png" alt="home" width="150" height="150"></a></p>
 	</div>
 	<div class="col-xs-6">
 		<h1>LNKed</h1>
 		<nav>
 			<ul>
-				<li><a href="schools.html">Schools</a></li>
+				<li><a href="/colleges/">Schools</a></li>
 				<li><a href="resources.html">Resources</a></li>
 				<li><a href="ambassadors.html">Ambassadors</a></li>
 			</ul>
@@ -43,20 +63,61 @@
   </form>
 </div>
 
-<script>
-// Get the modal
-var modal = document.getElementById('id01');
+	</div>
+</div>
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+<!-- image -->
+<br>
+<div class="row">
+	<div class="col-xs-12">
+		<img src="/static/images/homepageheader.png" alt="header" width="1200" height="450">
 	</div>
+</div>
+
+{% block content %}
+<div class="row">
+<div class="col-xs-2"></div>
+
+<div class="col-xs-4 about">
+<h2>About</h2>
+		<p>We are your single online resource that eases the stress and apprehension surrounding the transition to college. LNKed eliminates the hunt on tens of websites while trying to find the perfect school and provides campus resources once you’ve been accepted. Our goal is to connect students, parents, and counselors the resources that are necessary during this process and reduce the stress leading up to the first day of classes.</p>
+		<p class="button"><a href="signup.html">SIGN UP</a></p>
+
+</div>
+
+<div class="col-xs-4 testimonials">
+		<h2>Testmonials</h2>
+		<p class="testimonialsp">Our hand selected College Ambassadors have taken the time to let you know what it’s like to attend their college. Their local, honest, and want to help you find the best school for you. Check out some of their testimonies to see if their college lifestyle is what you’d like to have as well.</p>
+		<p class="button"><a href="ambassadors.html">LEARN MORE</a></p>
 	</div>
+	<div class="col-xs-2"></div>
+
+</div>
+{% endblock %}
+<!-- footer -->
+<br>
+<div class="row footer">
+	<div class="col-xs-4">
+		<p footer>Enter your email to be the first to know new information about colleges near you.</p>
+	</div>
+	<div class="col-xs-4">
+		<p class="button"><a href="https://twitter.com/" class="fa fa-twitter"></a> follow LNKed</p>
+	</div>
+	<div class="col-xs-4">
+		<p class="button"><a href="https://www.facebook.com/" class="fa fa-facebook"></a> Become a fan</p>
+	</div>
+</div>
+<div class="row footer">
+	<div class="col-xs-4">
+		<form action="/action_page.php">
+ 			<input list="browsers" name="browser">
+  			<input type="submit">
+		</form>
+		<br>
+	</div>
+</div>
+
+</div>
 
 </body>
 </html>
-    {% endblock %}

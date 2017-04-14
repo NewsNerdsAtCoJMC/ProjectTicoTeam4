@@ -185,7 +185,7 @@ nav li a:hover {
 
 .bottom {
 	background-color: #52B4F5;
-	color: white;	
+	color: white;
 }
 
 .ambassador {
@@ -197,8 +197,8 @@ nav li a:hover {
 
 /*-- FAQ --*/
 
-.image { 
-	position: relative; 
+.image {
+	position: relative;
 	width: 100%;
 }
 
@@ -371,12 +371,12 @@ span.psw {
 }
 
 @-webkit-keyframes animatezoom {
-    from {-webkit-transform: scale(0)} 
+    from {-webkit-transform: scale(0)}
     to {-webkit-transform: scale(1)}
 }
-    
+
 @keyframes animatezoom {
-    from {transform: scale(0)} 
+    from {transform: scale(0)}
     to {transform: scale(1)}
 }
 

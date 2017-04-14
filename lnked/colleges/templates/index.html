@@ -1,24 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css" />
-    <title>{% block title %}LNKed{% endblock %}</title>
-</head>
+{% extends 'base.html' %}
 
-<body>
-  <header>Welcome to LNKed!</header>
-    <div id="sidebar">
-        {% block sidebar %}
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">College_comparison</a></li>
-            <li><a href="/blog/">Blog</a></li>
-        </ul>
-        {% endblock %}
-    </div>
+{% block title %}LNKed{% endblock %}
 
-    <div id="content">
-        {% block content %}{% endblock %}
-    </div>
-</body>
-</html>
+{% block content %}
+
+<div class="row">
+<div class="col-xs-2"></div>
+
+<div class="col-xs-4 about">
+<h2>About</h2>
+		<p>We are your single online resource that eases the stress and apprehension surrounding the transition to college. LNKed eliminates the hunt on tens of websites while trying to find the perfect school and provides campus resources once you’ve been accepted. Our goal is to connect students, parents, and counselors the resources that are necessary during this process and reduce the stress leading up to the first day of classes.</p>
+		<p class="button"><a href="signup.html">SIGN UP</a></p>
+
+</div>
+
+<div class="col-xs-4 testimonials">
+		<h2>Testmonials</h2>
+		<p class="testimonialsp">Our hand selected College Ambassadors have taken the time to let you know what it’s like to attend their college. Their local, honest, and want to help you find the best school for you. Check out some of their testimonies to see if their college lifestyle is what you’d like to have as well.</p>
+		<p class="button"><a href="ambassadors.html">LEARN MORE</a></p>
+	</div>
+	<div class="col-xs-2"></div>
+
+</div>
+
+{% endblock %}

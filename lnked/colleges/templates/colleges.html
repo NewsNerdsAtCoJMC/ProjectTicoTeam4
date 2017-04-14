@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Local colleges{% endblock %}
+
+{% block content %}
+
+
+<div class="row">
+{% for object in colleges %}
+
+
+<div class="col-xs-4 about">
+<h2>{{ object.name }}</h2>
+		<p></p>
+		<p class="button"><a href="https://www.free-4u.com/Colleges/Nebraska-Colleges.html" target="_blank">LEARN MORE</a></p>
+
+</div>
+{% endfor %}
+
+</div>
+
+
+{% endblock %}

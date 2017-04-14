@@ -11,6 +11,12 @@ from colleges.models import SignificantMajors, College, Blog
 def index(request):
     return render(request, 'index.html', {})
 
+def schools_list(request):
+    colleges = College.objects.order_by('name')
+    context = {'colleges': colleges}
+    return render(request, 'colleges.html', context)
+
+
 def college_comparison(request):
     return render (request, 'colleges/college_comparison.html', {})
     search_bar = SearchBar(request, ['college'])
