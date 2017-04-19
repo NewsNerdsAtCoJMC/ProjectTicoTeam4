@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load humanize %}
 
 {% block title %}Local colleges{% endblock %}
 
@@ -11,7 +12,12 @@
 
 <div class="col-xs-4 about">
 <h2>{{ object.name }}</h2>
-		<p></p>
+		<p><strong>{{ object.city }}</strong></p>
+    <p>In-state tuition: ${{ object.instate_cost|intcomma }}</p>
+    <p>Out-of-state tuition: ${{ object.outstate_cost|intcomma }}</p>
+    <p><a href="{{ object.website }}" target=_blank>Website</a></p>
+    <p><a href="{{ object.majors }}">Majors</a></p>
+    <p><a href="{{ object.financial_aid }}">Financial aid</a></p>
 		<p class="button"><a href="https://www.free-4u.com/Colleges/Nebraska-Colleges.html" target="_blank">LEARN MORE</a></p>
 
 </div>

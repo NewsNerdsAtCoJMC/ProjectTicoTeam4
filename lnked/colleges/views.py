@@ -23,3 +23,6 @@ def college_comparison(request):
 
 def college_blog(request):
     return render (request, 'colleges/college_blog.html', {})
+
+def home(request):
+    return render(request, 'home.html', {})
