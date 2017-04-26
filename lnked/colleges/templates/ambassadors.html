@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ambassadors</title>
+
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Styles -->
+<link href="/static/css/flexboxgrid.min.css" rel="stylesheet">
+<link href="/static/css/lnked.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+
+</style>
+
+</head>
+
+<body>
+<div class="container-fluid">
+
+<!-- header -->
+
+<div class="row">
+	<div class="col-xs-1"></div>
+	<div class="col-xs-2 icon">
+		<p><a href="/"><img src="/static/images/gradcap.png" alt="home" width="150" height="150"></a></p>
+	</div>
+	<div class="col-xs-6">
+		<h1>LNKed</h1>
+		<nav>
+			<ul>
+				<li><a href="/schools">Schools</a></li>
+				<li><a href="/resources">Resources</a></li>
+				<li><a href="/ambassadors">Ambassadors</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="col-xs-3 login">
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="help">Login</button>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	</div>
+</div>
+<br>
+<!-- content -->
+
+<div class="row">
+	<div class="col-xs-12 top">
+		<h2>What's your school really like?</h2>
+			<p>Student Ambassadors are here to answer your questions and let you know what life at your prospective university is really like - no cheezy tours, no sugar coating.</p>
+	</div>
+</div>
+<br>
+<div class="row">
+<div class="col-xs-1"></div>
+	<div class="col-xs-4 ambassador">
+		<p>Nebraska Lincoln</p>
+		<p>"There really is no place like Nebraska. As an out of state student, I was terrified to come to such a large school knowing close to nobody. However I was able to get involved in so many clubs and organizations that allowed me to meet so many great people. The resources we have through the library and your own college are absolutely amazing, and you'll never feel lost because there's always someone there to help."<br><br>- Henry Clarke <i class="fa fa-envelope-o" style="color:white"></i></p>
+	</div>
+<div class="col-xs-1"></div>
+	<div class="col-xs-4 ambassador">
+		<p>Southeast Community College</p>
+		<p>"Between the affordable tuition and fees, the small class sizes, the convenience of the campus location and online, or the friendly and courteous faculty and staff, it's hard not to have a positive experience at SCC. I still get to live in downtown Lincoln and visit with all my friends in the area, but for a fraction of the cost!"<br><br>- Rose Anderson <i class="fa fa-envelope-o" style="color:white"></i></p>
+	</div>
+</div>
+<br>
+<div class="row">
+<div class="col-xs-1"></div>
+	<div class="col-xs-4 ambassador">
+		<p>Nebraska Wesleyan</p>
+		<p>"Nebraska Wesleyan is rated the #1 liberal arts university in Nebraska, and that doesn't surprise me at all. The small class sizes allow you to grow closer to your professors and fellow students, most of which share your similar passions. If it weren't for the amazing professors I've met along the years I wouldn't feel as prepared to graduate as I am now!"<br><br>- Brian Herman <i class="fa fa-envelope-o" style="color:white"></i></p>
+	</div>
+<div class="col-xs-1"></div>
+	<div class="col-xs-4 ambassador">
+		<p>Union College</p>
+		<p>"I think Union is a great place to be. Teachers are not afraid to go the extra mile to help you with a homework assignment, you make friends who have your back - spiritually and academically, and the small campus provides endless service and leadership experiences!"<br><br>- Mary Collins <i class="fa fa-envelope-o" style="color:white"></i></p>
+	</div>
+	</div>
+<br>
+<div class="row">
+	<div class="col-xs-12 bottom">
+		<h2>Not sure who to chat with? Visit our Schools page to check out your college options.</h2>
+	</div>
+<div class="col-xs-1"></div>
+</div>
+
+<!-- footer -->
+<br>
+<div class="row footer">
+	<div class="col-xs-4">
+		<p footer>Enter your email to be the first to know new information about colleges near you.</p>
+	</div>
+	<div class="col-xs-4">
+		<p class="button"><a href="#" class="fa fa-twitter"></a> follow LNKed</p>
+	</div>
+	<div class="col-xs-4">
+		<p class="button"><a href="#" class="fa fa-facebook"></a> Become a fan</p>
+	</div>
+</div>
+<div class="row footer">
+	<div class="col-xs-4">
+		<form action="/action_page.php">
+ 			<input list="browsers" name="browser">
+  			<input type="submit">
+		</form>
+		<br>
+	</div>
+</div>
+
+</div>
+</body>
+</html>

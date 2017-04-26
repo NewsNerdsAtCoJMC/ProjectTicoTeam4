@@ -16,6 +16,16 @@ def schools_list(request):
     context = {'colleges': colleges}
     return render(request, 'colleges.html', context)
 
+def resources(request):
+    colleges = College.objects.order_by('name')
+    context = {'colleges': colleges}
+    return render(request, 'resources.html', context)
+
+def ambassadors(request):
+    colleges = College.objects.order_by('name')
+    context = {'colleges': colleges}
+    return render(request, 'ambassadors.html', context)
+
 
 def college_comparison(request):
     return render (request, 'colleges/college_comparison.html', {})
