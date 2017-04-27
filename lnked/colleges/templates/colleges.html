@@ -5,14 +5,12 @@
 
 {% block content %}
 
-
 <div class="row">
 {% for object in colleges %}
 
 
 <div class="col-xs-4 about">
 <h2>{{ object.name }}</h2>
-		<p><strong>{{ object.city }}</strong></p>
     <p>In-state tuition: ${{ object.instate_cost|intcomma }}</p>
     <p>Out-of-state tuition: ${{ object.outstate_cost|intcomma }}</p>
     <p><a href="{{ object.website }}" target=_blank>Website</a></p>
