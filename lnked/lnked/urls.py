@@ -5,7 +5,7 @@ from colleges import views
 
 urlpatterns = [
     url(r'^$', views.index, name='index'),
-    url(r'schools/$', views.schools, name='schools'),
+    url(r'colleges/$', views.schools_list, name='schools_list'),
     url(r'resources/$', views.resources, name='resources'),
     url(r'faq/$', views.faq, name='faq'),
     url(r'checklist/$', views.checklist, name='checklist'),
