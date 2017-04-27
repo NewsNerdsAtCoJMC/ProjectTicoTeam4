@@ -21,11 +21,25 @@ def resources(request):
     context = {'colleges': colleges}
     return render(request, 'resources.html', context)
 
+def faq(request):
+    colleges = College.objects.order_by('name')
+    context = {'colleges': colleges}
+    return render(request, 'faq.html', context)
+
+def checklist(request):
+    colleges = College.objects.order_by('name')
+    context = {'colleges': colleges}
+    return render(request, 'checklist.html', context)
+
 def ambassadors(request):
     colleges = College.objects.order_by('name')
     context = {'colleges': colleges}
     return render(request, 'ambassadors.html', context)
 
+def schools(request):
+    colleges = College.objects.order_by('name')
+    context = {'colleges': colleges}
+    return render(request, 'schools.html', context)
 
 def college_comparison(request):
     return render (request, 'colleges/college_comparison.html', {})

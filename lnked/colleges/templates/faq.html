@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>FAQ</title>
+
+<!-- RWD -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Styles -->
+<link href="/static/css/flexboxgrid.min.css" rel="stylesheet">
+<link href="/static/css/lnked.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style type="text/css">
+</style>
+
+</head>
+
+<body>
+<div class="container-fluid">
+
+<!-- header -->
+
+<div class="row">
+	<div class="col-xs-1"></div>
+	<div class="col-xs-2 icon">
+		<p><a href="/"><img src="/static/images/gradcap.png" alt="home" width="150" height="150"></a></p>
+	</div>
+	<div class="col-xs-6">
+		<h1>LNKed</h1>
+		<nav>
+			<ul>
+				<li><a href="/schools">Schools</a></li>
+				<li><a href="/resources">Resources</a></li>
+				<li><a href="/resources">Ambassadors</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="col-xs-2 login">
+		<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="help">Login</button>
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+	</div>
+	</div>
+
+<!-- image -->
+<div class="row">
+	<div class="col-xs-12 image">
+		<img src="/static/images/faq.png" width="1200"/>
+	</div>
+</div>
+
+<!-- content -->
+
+<div class="row">
+	<div class="col-xs-12 faq">
+		<p><h2>When should I start?</h2>The summer before your senior year is the best time to start. Most students do the majority of their application work in the fall of their senior year.</p>
+
+		<p><h2>How do I begin?</h2>Find out what goes into an application and begin collecting the materials you need. Create a folder for each college you are applying to. At the front of each folder, put a checklist of what you’ll need for the application and when it’s due.</p>
+
+		<p><h2>How many colleges do I apply to?</h2>Five to eight colleges is the recommended number. They should all be colleges you’d be happy to attend. It’s good to apply to some colleges that are a bit of a stretch for you and some that you feel will likely admit you. But most should feel like good, realistic matches.</p>
+
+		<p><h2>What is a community college?</h2>Community college is the most common type of two-year college. These colleges offer many types of educational programs, including those that lead to associate degrees and certificates. Certificates and some types of associate degrees focus on career readiness. Other types of associate degrees are good preparation for study at a four-year college where graduates can earn a bachelor’s degree.</p>
+
+		<p><h2>Who goes to community college</h2>More than 40 percent of U.S. undergraduate students attend community colleges. Students who are 18 to 24 years old make up the largest age group. Community colleges also attract working adults, retirees and others who want to learn.</p>
+	</div>
+</div>
+
+<!-- footer -->
+<br>
+<div class="row footer">
+	<div class="col-xs-4">
+		<p footer>Enter your email to be the first to know new information about colleges near you.</p>
+	</div>
+	<div class="col-xs-4">
+		<p class="button"><a href="#" class="fa fa-twitter"></a> follow LNKed</p>
+	</div>
+	<div class="col-xs-4">
+		<p class="button"><a href="#" class="fa fa-facebook"></a> Become a fan</p>
+	</div>
+</div>
+<div class="row footer">
+	<div class="col-xs-4">
+		<form action="/action_page.php">
+ 			<input list="browsers" name="browser">
+  			<input type="submit">
+		</form>
+		<br>
+	</div>
+</div>
+
+</div>
+</body>
+</html>
